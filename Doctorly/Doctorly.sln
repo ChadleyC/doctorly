@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctorly.Api", "Doctorly.Api\Doctorly.Api.csproj", "{B1F8715D-0BA0-49E3-B2B1-8007C82151A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctorly.Tests", "Doctorly.Tests\Doctorly.Tests.csproj", "{07F913E1-E927-4600-80C7-D2EB5723D60C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctorly.Data", "Doctorly.Data\Doctorly.Data.csproj", "{F05567E8-E8A2-4DFC-BD16-6DF5306761B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1F8715D-0BA0-49E3-B2B1-8007C82151A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F8715D-0BA0-49E3-B2B1-8007C82151A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F8715D-0BA0-49E3-B2B1-8007C82151A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F8715D-0BA0-49E3-B2B1-8007C82151A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F913E1-E927-4600-80C7-D2EB5723D60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F913E1-E927-4600-80C7-D2EB5723D60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F913E1-E927-4600-80C7-D2EB5723D60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F913E1-E927-4600-80C7-D2EB5723D60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05567E8-E8A2-4DFC-BD16-6DF5306761B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05567E8-E8A2-4DFC-BD16-6DF5306761B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05567E8-E8A2-4DFC-BD16-6DF5306761B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05567E8-E8A2-4DFC-BD16-6DF5306761B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
