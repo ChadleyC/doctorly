@@ -1,9 +1,9 @@
 namespace Doctorly.Api.Endpoints.Attendees;
 
-public class AttendeeEndpointFactory
+public static class AttendeeEndpointFactory
 {
-    public Endpoint AddEndPoint => new Endpoint("/Attendee/AddAttendee", (context) =>
+    public static void RegisterAttendeeEndpoints(WebApplication app)
     {
-        return Task.FromResult(new object());
-    }, "Add Attendee", EndPointRestType.Post);
+        
+    }
 }

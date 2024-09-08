@@ -98,7 +98,8 @@ public class EventServiceTests
             StartTime = DateTimeOffset.Now,
             EndTime = DateTimeOffset.Now.AddHours(1),
         };
-        await _db.Events.AddAsync(eventItem);
+        var addResult = await _db.Events.AddAsync(eventItem);
+        await _db.SaveChangesAsync();
         var eventService = new EventService(_db);
 
         // act

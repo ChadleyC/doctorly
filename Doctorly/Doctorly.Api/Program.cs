@@ -1,5 +1,7 @@
 using Doctorly.Api.Endpoints;
 using Doctorly.Data.Repository;
+using Doctorly.Data.UseCases.Attendees;
+using Doctorly.Data.UseCases.Events;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DoctorlyDbContext>(db => db.UseInMemoryDatabase("DoctorlyDb"));
+builder.Services.AddTransient<IEventService, EventService>();
+builder.Services.AddTransient<IAttendeeService, AttendeeService>();
 
 var app = builder.Build();
 

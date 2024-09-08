@@ -21,9 +21,20 @@ public class EventService : IEventService
 
     public async Task<Event?> AddEventAsync(Event item)
     {
+        item.Id = Guid.NewGuid();
+        if (item.Attendees.Any())
+        {
+            item.Attendees.ForEach(x => x.EventId = item.Id);
+        }
         var result = await _db.Events.AddAsync(item);
-        await _db.SaveChangesAsync();
-        return result.State != EntityState.Added ? null : result.Entity;
+
+        if (result.State == EntityState.Added)
+        {
+            await _db.SaveChangesAsync();
+            return result.Entity;
+        }
+
+        return null;
     }
 
     public async Task<Event?> UpdateEventAsync(Event item)
